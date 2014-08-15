@@ -1,0 +1,48 @@
+<script>
+  // converts 'Italicize me' from unitalicized to italicized
+  function italicizer() {
+    // finds the 'italicizer' button && adds a click event listener
+    $("#italicizer").click(function() {
+      // finds the 'Italicize me' && adds style attribute
+      $("#italic_1").attr("style", "font-style:italic");
+    });
+  };
+
+  // waits until the document has completely loaded before running scripts within
+  $(document).ready(function() {
+    // initializes the 'italicizer' function
+    italicizer();
+  });
+</script>
+
+<h1>DOMination</h1>
+
+<ul class="list">
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+  <li>Four</li>
+</ul>
+
+<ul class="list">
+  <li>A</li>
+  <li>B</li>
+  <li>C</li>
+  <li>D</li>
+</ul>
+
+<p id="string_1" class="string">
+  small_s_in_first_word_all_other_words_capitalized
+</p>
+
+<p>
+  hehehehehe
+</p>
+
+<p id="italic_1" class="string">
+  Italicize me
+</p>
+
+
+
+<button id="italicizer">italicizer</button>
